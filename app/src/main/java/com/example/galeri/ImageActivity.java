@@ -15,7 +15,7 @@ public class ImageActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
-        Imagefullview=(ImageView) findViewById(R.id.fullimageviewer);
+        Imagefullview=(ImageView) findViewById(R.id.fullimagesize);
         String x = getIntent().getExtras().getString("img");
         Imagefullview.setImageURI(Uri.parse(x));
 
